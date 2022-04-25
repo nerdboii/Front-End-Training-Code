@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testing Table </title>
+    </head>
+
+    <body>
+        <table>
+            <style>
+                table, th, td {
+                    border: 2px solid black;
+                    border-collapse: collapse;
+                    text-align: center;
+                }
+                caption {
+                    color:rgb(87, 6, 180);
+                }
+                th, td {
+                    padding: 5px;
+                }
+                table {
+                    width: 100%;
+                }
+                table#alter tr:nth-child(even) {
+                    background-color: rgba(6, 180, 117, 0.349);
+                }
+                table#alter tr:nth-child(odd) {
+                    background-color: rgba(255, 255, 255, 0.712);
+                }
+                table#alter th {
+                    background-color: #abc;
+                }
+            </style>
+            <caption>Các phần tử chính áp dụng cho bảng</caption>
+            <tr><th>Tên phần tử</th><th>Thẻ</th><th>Công dụng</th><th>Các thuộc tính đi kèm</th></tr>
+            <tr><td>Bảng</td><td>"table"</td><td>Tạo một bảng</td><td>border, width</td></tr>
+            <tr><td>Dòng đầu đề</td><td>"th"</td><td>Tạo các ô đầu đề của bảng</td><td>none</td></tr>
+            <tr><td>Dòng nội dung</td><td>"tr"</td><td>Tạo dòng nội dung của bảng</td><td>none</td></tr>
+            <tr><td>Ô</td><td>"td"</td><td>Chứa nội dung của từng ô trong bảng</td><td>none</td></tr>
+            <tr><td>Tên bảng</td><td>"caption"</td><td>Hiển thị tên của bảng</td><td>none</td></tr>
+        </table>
+
+        <br> <br> <br>
+        <p><strong>Chú ý: Có thể sử dụng CSS để cấu hình bảng</strong></p>
+    </body>
+</html>
